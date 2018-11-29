@@ -9,7 +9,7 @@ const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin');
 const imageminMozjpeg = require('imagemin-mozjpeg');
 
 
-const SRC_PATH = path.resolve(__dirname, 'src');
+const SRC_PATH = path.resolve(__dirname, 'src', 'client');
 const BUILD_PATH = path.resolve(__dirname, 'build');
 
 const postCSSLoaderPlugins = [

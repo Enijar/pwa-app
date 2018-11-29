@@ -6,8 +6,8 @@
     "assets:watch": "npx webpack --progress --hide-modules --watch --mode development",
     "assets:build": "npx webpack --progress --hide-modules --mode production",
     "start:dev-assets": "npx webpack-dev-server --mode development",
-    "start:dev": "nodemon server --watch server",
-    "start": "forever start -o storage/out.log -e storage/error.log server"
+    "start:dev": "npx nodemon src/server --watch src/server",
+    "start": "npx forever start -o storage/out.log -e storage/error.log src/server"
   },
   "author": "James Craig",
   "license": "ISC",
@@ -47,9 +47,10 @@
     "webpack-notifier": "^1.6.0"
   },
   "dependencies": {
+    "body-parser": "latest",
+    "forever": "^0.15.3",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-router-dom": "^4.3.1",
-    "body-parser": "latest"
+    "react-router-dom": "^4.3.1"
   }
 }
