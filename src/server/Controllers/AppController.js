@@ -1,5 +1,5 @@
 const path = require('path');
 
 module.exports = (req, res) => {
-  res.sendFile(path.resolve(__dirname, '..', '..', 'build', 'index.html'));
+  res.sendFile(path.resolve(__dirname, '..', '..', '..', 'build', 'index.html'));
 };
