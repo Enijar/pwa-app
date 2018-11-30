@@ -1,4 +1,4 @@
-# PAW App
+# PWA App
 
 Whilst I'm learning how to build PWAs, I will develop this *useless* app, in the hopes that I learn from my mistakes
 here and not in production 😬.
