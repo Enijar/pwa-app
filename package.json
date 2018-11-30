@@ -7,7 +7,7 @@
     "assets:build": "npx webpack --progress --hide-modules --mode production",
     "start:dev-assets": "npx webpack-dev-server --mode development",
     "start:dev": "npx nodemon src/server --watch src/server",
-    "start": "npx forever start -o storage/out.log -e storage/error.log src/server"
+    "start": "npx forever start -o storage/out.log -e storage/error.log \"$(pwd)/src/server\""
   },
   "author": "James Craig",
   "license": "ISC",
